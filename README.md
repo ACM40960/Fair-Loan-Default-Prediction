@@ -93,4 +93,8 @@ We also tested a **3-tier credit policy** where applicants were ranked by predic
 
 📌 Tiering helped align **business goals with risk appetite**, reducing high-risk approvals while maintaining coverage of genuine applicants.
 
+➡️ **View notebook outputs here:** [fair_loan_default_prediction.html](notebooks/fair_loan_default_prediction.html)
+
+
+
 
