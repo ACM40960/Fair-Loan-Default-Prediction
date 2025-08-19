@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pkl
+*.joblib
+*.parquet
+.ipynb_checkpoints/
+data/
+*.csv
+*.xlsx
+artifacts/
+logs/
+mlruns/
+.env
+.venv/
+venv/
+*.egg-info/
