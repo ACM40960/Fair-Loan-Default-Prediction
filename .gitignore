@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 *.py[cod]
 *.pkl
@@ -14,3 +15,20 @@ mlruns/
 .venv/
 venv/
 *.egg-info/
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.parquet
+*.joblib
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data (raw or large files)
+data/
+artifacts/
+*.csv
+*.xlsx
+>>>>>>> c5f4f4021b1fb58570f63e2674c6a70d4940cdb2
