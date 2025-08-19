@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.parquet
+*.joblib
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data (raw or large files)
+data/
+artifacts/
+*.csv
+*.xlsx
