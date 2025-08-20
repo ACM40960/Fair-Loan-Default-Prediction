@@ -17,6 +17,8 @@ Data & Computational Science — Final Project
 
 ---
 
+➡️ **View notebook outputs here:** https://nbviewer.org/github/ACM40960/Fair-Loan-Default-Prediction/blob/main/notebooks/fair_loan_default_prediction.ipynb
+
 ## 🎯 Business Objective
 This project builds a **predictive model** to classify applicants as **defaulters** or **non-defaulters** based on their application data.  
 The goal is to **minimize credit risk** for banks while ensuring the decision process remains **fair, unbiased, and transparent**.
@@ -93,7 +95,6 @@ We also tested a **3-tier credit policy** where applicants were ranked by predic
 
 📌 Tiering helped align **business goals with risk appetite**, reducing high-risk approvals while maintaining coverage of genuine applicants.
 
-➡️ **View notebook outputs here:** https://nbviewer.org/github/ACM40960/Fair-Loan-Default-Prediction/blob/main/notebooks/fair_loan_default_prediction.ipynb
 
 
 
