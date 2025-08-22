@@ -12,7 +12,7 @@ UCD College Dublin
 
 <p align="center">
   <img src="https://www.cashe.co.in/wp-content/uploads/2024/09/Loan-defaults-.png" 
-       alt="Loan Default" width="550" height="200">
+       alt="Loan Default" width="550" height="400">
 </p>
 
 ---
@@ -242,14 +242,23 @@ Implemented multiple ML algorithms for comparison:
 
 I performed univariate, bivariate, and multivariate analyses to understand default patterns in the dataset.
 
-![Chi2_Correlation](result_images/chi2_correlation.png) 
+<p align="left">
+  <img src="result_images/chi2_correlation.png" alt="Chi2 Correlation" width="55%">
+</p>
 
 *Tells us which cat. variables are most informative for predicting default status and can help guide feature selection in modeling.*
 
-![KMeans Clusters](result_images/kmeans_clusters.png)  
+<p align="left">
+  <img src="result_images/kmeans_cluster.png" alt="KMeans Clusters" width="55%">
+</p>
+
 *Three distinct borrower clusters emerged, with varying default rates (6–9%).*
 
-![Average Factor Scores per Cluster](result_images/kmeans_factors.png)  
+<p align="left">
+  <img src="result_images/kmeans_factors.png" alt="Average Factor Scores per Cluster" width="55%">
+</p>
+
+*Factor Analysis on K-means*
 *Cluster 2 shows high household size stress, while Cluster 1 exhibits strong regional risk profiles. These latent factors help explain differences in default risk.*
 
 ### Model Results 
@@ -267,10 +276,12 @@ XGBoost, LogReg, SVM, Random Forest with Optuna hyperparameter tuning, focusing 
 
 ### SHAP-Based Explainability 
 Used SHAP values to interpret model predictions, identifying savings score, loan amounts, and external credit bureau scores as the strongest risk indicators, with demographic stability offering mild protective effects.
+
 | SHAP Summary | SHAP Importance |
 |--------------|-----------------|
 | ![SHAP Summary](result_images/shap_summary.png) | ![SHAP Importance](result_images/shap_importance.png) |
 
+  
 
 ### Fairness Detection
 I audited model fairness across groups (gender, family status, etc.), finding disparities in approval rates and recall (TPR), where certain groups (e.g., widows) faced over-approvals but weaker recall.
@@ -289,9 +300,9 @@ I audited model fairness across groups (gender, family status, etc.), finding di
 I designed a 3-tier lending strategy (auto-decline, manual review, approve) to balance recall with business precision, concentrating most defaults in the decline tier while keeping approval risk low.
 
 - **3-Tier Lending Policy** designed from model probability scores:  
-  - **Tier 1:** Approve (low risk)  ** p < **t₁**
-  - **Tier 2:** Review / Conditional Loan (medium risk)  ** **t₁** ≤ p < **t₂**
-  - **Tier 3:** Reject (high risk)  ** p ≥ **t₂**
+- **Tier 1:** Approve (low risk), p < t₁
+- **Tier 2:** Review / Conditional Loan (medium risk), t₁ ≤ p < t₂
+- **Tier 3:** Reject (high risk), p ≥ t₂
 - Balances **risk minimization** with **fair lending practices**.
 
 
@@ -301,11 +312,17 @@ I designed a 3-tier lending strategy (auto-decline, manual review, approve) to b
 | **Manual review** | 18,450 | 1,962    | 20.0%         | 26.3%             | 10.6%        | 1.32×            |
 | **Approve**      | 59,963 | 2,220    | 65.0%         | 29.8%             | 3.7%         | 0.46×            |
 
-![Decision Layer](result_images/tier_policy.png)  
+
+<p align="left">
+  <img src="result_images/tier_policy.png" alt="Decision Layer" width="50%">
+</p>
 
 
+**Conclusion**
 
-
+* XGBoost with class weighting achieved \~65% recall on defaulters while balancing business thresholds.
+* SHAP analysis revealed savings, loan size, and external credit scores as the key drivers of default.
+* A 3-tier lending policy was designed to capture most defaults in the decline group while reducing risk in approvals, addressing both performance and fairness.
 
 
 
