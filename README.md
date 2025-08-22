@@ -125,8 +125,6 @@ fair-loan-default-prediction/
 │ ├─ optuna_credit.db # Optuna studies (SQLite)
 │ ├─ optuna_credit_v2.db
 | └─ optuna_credit_v3.db
-├─ config/ # Configurations
-│ └─ config.yaml # Data paths, preprocessing, model params
 ├─ README.md # Project documentation
 ├─ requirements.txt # Dependencies
 ├─ requirements-gpu-optional.txt # GPU Dependencies
