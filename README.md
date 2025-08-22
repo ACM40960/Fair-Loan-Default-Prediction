@@ -277,7 +277,7 @@ Used SHAP values to interpret model predictions, identifying savings score, loan
 
 | SHAP Summary | SHAP Importance |
 |--------------|-----------------|
-| ![SHAP Summary](result_images/shap_summary.png) | ![SHAP Importance](result_images/shap_importance.png) |
+| ![SHAP Summary](result_images/shap_features.png) | ![SHAP Importance](result_images/shap_importace.png) |
 
   
 
