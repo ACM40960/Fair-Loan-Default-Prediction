@@ -1,0 +1,5 @@
+# Optional GPU/RAPIDS/accelerated packages
+cudf
+cuml
+cupy
+thundersvm
