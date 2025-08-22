@@ -28,7 +28,7 @@ UCD College Dublin
 </p>
 
 ---
-
+**Dataset link** -   https://www.kaggle.com/datasets/mishra5001/credit-card/data?select=application_data.csv
 
 **View notebook outputs here:** https://nbviewer.org/github/ACM40960/Fair-Loan-Default-Prediction/blob/main/notebooks/fair_loan_default_prediction.ipynb
 
